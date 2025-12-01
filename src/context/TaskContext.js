@@ -52,6 +52,7 @@ export const TaskContextProvider = ({ children }) => {
           userId: user.id,
         })
         .select();
+      console.log(user);
       if (error) throw error;
       //... tasks es como decir traeme los arreglos que ya estan y luego ...data pide que se combinen
       setTasks([...tasks, ...data]);
